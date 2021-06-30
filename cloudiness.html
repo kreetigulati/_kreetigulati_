@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Web Visualization by Kreeti Gulati</title>
+  <title>Cloudiness</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -71,16 +71,14 @@
       <!-- left side -->
       <div class="col col-12 col-md-8 divbdy">
         <br>
-        <h1>Summary: Latitude vs. X</h1>
+        <h1>Cloudiness</h1>
         <hr>
-        <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Temperature" width="280" align="left">
-        <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-          accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
-          cities.</p>
-        <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors
-          we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data
-          and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and
-          correlations witnesseed.</p>
+        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Temperature"></a>
+
+        <p>
+          The weather is not impacted by the percentage of cloudiness in a city as one approaches the equator (0 Deg. Latitude). 
+          The southern hemisphere and northern hemisphere both show no correlation between cities latitude and cloudiness percentage.
+        </p>
         <hr>
       </div>
       <!-- left side end -->
@@ -97,7 +95,7 @@
             <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Humidity"></a>
           </div>
           <div class="col col-3 col-md-6">
-            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness"></a>
+            <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Cloudiness" id="imgsel"></a>
           </div>
           <div class="col col-3 col-md-6">
             <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Wind Speed"></a>
@@ -106,7 +104,6 @@
       </div>
       <!-- end of rigth side -->
     </div>
-  </div>
   </div>
 </body>
 
